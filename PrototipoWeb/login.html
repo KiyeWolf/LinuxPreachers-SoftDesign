@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Fitness Club - Acceso de Socios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #10b981;
+      --accent-danger: #ef4444;
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: #334155;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Fondo decorativo */
+    .bg-glow {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.25) 0%, rgba(15, 23, 42, 0) 70%);
+      top: -50px;
+      left: -50px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .bg-glow-bottom {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+      bottom: -50px;
+      right: -50px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Contenedor Login */
+    .login-card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 440px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 800;
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    }
+    
+    .brand-header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.25rem;
+    }
+
+    .brand-header p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* Formulario */
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .input-icon {
+      position: absolute;
+      left: 1rem;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      pointer-events: none;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.8rem 1rem 0.8rem 2.75rem;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
+
+    .form-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+
+    .remember-me input {
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+
+    .forgot-link {
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .forgot-link:hover {
+      color: #93c5fd;
+      text-decoration: underline;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 0.85rem;
+      background: var(--primary);
+      border: none;
+      border-radius: var(--radius-sm);
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    }
+
+    .btn-submit:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-submit:active {
+      transform: translateY(0);
+    }
+
+    /* Mensaje de validación */
+    .status-msg {
+      display: none;
+      padding: 0.75rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 1.25rem;
+      font-size: 0.85rem;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .status-msg.error {
+      display: block;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      color: #fca5a5;
+    }
+
+    .status-msg.success {
+      display: block;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #6ee7b7;
+    }
+
+    .login-footer {
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .login-footer a {
+      color: #34d399;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+  <div class="bg-glow-bottom"></div>
+
+  <div class="login-card">
+    <div class="brand-header">
+ <!--<div class="brand-logo">EF</div>-->
+
+ <img src="LogoReal.jpeg" alt="Logo del gimnasio" height="52" class="img-logo">
+<!--<img src="quieres.png" alt="DOG" height="52" class="img-logo">-->
+      <h1>Energy Fitness Club</h1>
+      <p>Ingreso exclusivo para socios activos</p>
+    </div>
+
+    <div id="login-alert" class="status-msg"></div>
+
+    <form id="login-form" onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label class="form-label" for="member-dni">DNI o Nº de Socio</label>
+        <div class="input-wrapper">
+          <span class="input-icon">🪪</span>
+          <input 
+            type="text" 
+            id="member-dni" 
+            class="form-control" 
+            placeholder="Ej: 42981450" 
+            required 
+            autocomplete="username"
+          >
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="member-pass">Contraseña / PIN de Acceso</label>
+        <div class="input-wrapper">
+          <span class="input-icon">🔒</span>
+          <input 
+            type="password" 
+            id="member-pass" 
+            class="form-control" 
+            placeholder="••••••••" 
+            required 
+            autocomplete="current-password"
+          >
+        </div>
+      </div>
+
+      <div class="form-options">
+        <label class="remember-me">
+          <input type="checkbox" id="remember">
+          <span>Recordarme</span>
+        </label>
+        <a href="#" class="forgot-link" onclick="alert('Contacta al mostrador del gimnasio para reestablecer tu PIN.'); return false;">¿Olvidaste tu PIN?</a>
+      </div>
+
+      <button type="submit" class="btn-submit" id="btn-login">
+        <span>Ingresar al Portal</span>
+        <span>→</span>
+      </button>
+    </form>
+
+    <div class="login-footer">
+      ¿Todavía no te inscribiste? <a href="#" onclick="alert('Acércate a la recepción de Energy Fitness Club para dar de alta tu membresía.'); return false;">Hazte socio</a>
+    </div>
+  </div>
+
+  <script>
+    function handleLogin(e) {
+      e.preventDefault();
+      
+      const dni = document.getElementById('member-dni').value.trim();
+      const pass = document.getElementById('member-pass').value.trim();
+      const alertBox = document.getElementById('login-alert');
+      const btn = document.getElementById('btn-login');
+
+      // Feedback visual de carga
+      btn.innerText = 'Verificando socio...';
+      btn.style.opacity = '0.7';
+
+      setTimeout(() => {
+        if (dni.length < 6 || pass.length < 4) {
+          alertBox.className = 'status-msg error';
+          alertBox.innerText = 'Credenciales inválidas. Verifica tu DNI o contraseña.';
+          btn.innerHTML = '<span>Ingresar al Portal</span> <span>→</span>';
+          btn.style.opacity = '1';
+          return;
+        }
+
+        alertBox.className = 'status-msg success';
+        alertBox.innerText = '¡Acceso correcto! Redirigiendo a tus clases...';
+
+        // Redirección simulada a la vista de clases
+        setTimeout(() => {
+          window.location.href = 'index.html';
+          btn.innerHTML = '<span>Ingresar al Portal</span> <span>→</span>';
+          btn.style.opacity = '1';
+        }, 1000);
+      }, 600);
+    }
+  </script>
+</body>
+</html>
