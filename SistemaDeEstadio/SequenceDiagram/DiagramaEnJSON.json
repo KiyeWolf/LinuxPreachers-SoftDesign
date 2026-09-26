@@ -1,0 +1,993 @@
+{
+  "version": "31.5.3",
+  "pages": [
+    {
+      "id": "RUR36_vmKFiFbbDiZW2L",
+      "name": "Página-1",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-71",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-7",
+          "type": "node",
+          "parent": "1",
+          "label": ":C_Acceso"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-1",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-7"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-8",
+          "type": "node",
+          "parent": "1",
+          "label": ":accesoPolicial"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-2",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-8"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-17",
+          "type": "edge",
+          "parent": "1cUZVZyviqqRqft7OlX7-8",
+          "target": "9NsYLpCroGIw-4cZr2w5-2",
+          "label": "3: BuscarQR(qr)"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-9",
+          "type": "node",
+          "parent": "1",
+          "label": ":entrada"
+        },
+        {
+          "id": "sPu3u5BkCqpacvyjCrtT-2",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-9"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-11",
+          "type": "edge",
+          "parent": "1",
+          "label": "return"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-8",
+          "type": "node",
+          "parent": "1",
+          "label": "TOOLS"
+        },
+        {
+          "id": "ZAwvrGFST8smJ81ZUelY-1",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-37",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-38",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-37",
+          "label": "7: registrarPrimerTramo()"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-24",
+          "type": "edge",
+          "parent": "1",
+          "label": "8: accesoDenegadoRegistrado"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-28",
+          "type": "edge",
+          "parent": "1",
+          "source": "9NsYLpCroGIw-4cZr2w5-2",
+          "target": "sPu3u5BkCqpacvyjCrtT-2"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-29",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-28",
+          "label": "4: obtenerInfoEvento(Evento)"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-25",
+          "type": "edge",
+          "parent": "1",
+          "source": "9NsYLpCroGIw-4cZr2w5-1",
+          "target": "9NsYLpCroGIw-4cZr2w5-2"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-26",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-25",
+          "label": "2: validarQR(qr)"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-10",
+          "type": "edge",
+          "parent": "1",
+          "label": "9: accesoDenegado"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-4",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-7",
+          "type": "edge",
+          "parent": "1",
+          "source": "x7DoZ285upM_WTL2w8p7-1",
+          "target": "9NsYLpCroGIw-4cZr2w5-1",
+          "label": "1: lectQR(qr: Entrada)()"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-7",
+          "type": "edge",
+          "parent": "1",
+          "label": "dispatch"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-1",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-13",
+          "type": "node",
+          "parent": "1",
+          "label": "accesoAficionado"
+        },
+        {
+          "id": "gTZeGRFahD_8OmXUbKpx-1",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-20",
+          "type": "node",
+          "parent": "1",
+          "label": ":registradorAccesos"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-39",
+          "type": "node",
+          "parent": "x7DoZ285upM_WTL2w8p7-20"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-32",
+          "type": "node",
+          "parent": "x7DoZ285upM_WTL2w8p7-20"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-27",
+          "type": "edge",
+          "parent": "1",
+          "label": "&lt;&lt;create&gt;&gt;"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-23",
+          "type": "node",
+          "parent": "1",
+          "label": "",
+          "html": "<div><br></div><div><br></div>"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-41",
+          "type": "node",
+          "parent": "1",
+          "label": ":C_Acceso"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-42",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-41"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-43",
+          "type": "node",
+          "parent": "1",
+          "label": ":accesoPolicial"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-44",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-43"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-45",
+          "type": "edge",
+          "parent": "1cUZVZyviqqRqft7OlX7-43",
+          "target": "1cUZVZyviqqRqft7OlX7-44",
+          "label": "3: BuscarQR(qr: Entrada)"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-46",
+          "type": "node",
+          "parent": "1",
+          "label": ":entrada"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-47",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-46"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-48",
+          "type": "edge",
+          "parent": "1cUZVZyviqqRqft7OlX7-46",
+          "source": "1cUZVZyviqqRqft7OlX7-47",
+          "target": "1cUZVZyviqqRqft7OlX7-47"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-49",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-48",
+          "label": "5: puertaEvento()"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-50",
+          "type": "edge",
+          "parent": "1cUZVZyviqqRqft7OlX7-46",
+          "source": "1cUZVZyviqqRqft7OlX7-47",
+          "target": "1cUZVZyviqqRqft7OlX7-47"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-51",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-50",
+          "label": "6: validarFecha()"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-52",
+          "type": "node",
+          "parent": "1",
+          "label": "regAcceso"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-53",
+          "type": "edge",
+          "parent": "1",
+          "source": "1cUZVZyviqqRqft7OlX7-44",
+          "target": "1cUZVZyviqqRqft7OlX7-67"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-54",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-53",
+          "label": "8: registrarPrimerTramo()"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-55",
+          "type": "edge",
+          "parent": "1",
+          "source": "1cUZVZyviqqRqft7OlX7-67",
+          "target": "1cUZVZyviqqRqft7OlX7-44",
+          "label": "9: regOK"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-56",
+          "type": "edge",
+          "parent": "1",
+          "source": "1cUZVZyviqqRqft7OlX7-44",
+          "target": "1cUZVZyviqqRqft7OlX7-47"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-57",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-56",
+          "label": "4: obtenerInfoEvento()"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-58",
+          "type": "edge",
+          "parent": "1",
+          "source": "1cUZVZyviqqRqft7OlX7-42",
+          "target": "1cUZVZyviqqRqft7OlX7-44"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-59",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-58",
+          "label": "2: validarQR(qr: Entrada)"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-60",
+          "type": "edge",
+          "parent": "1",
+          "target": "1cUZVZyviqqRqft7OlX7-42",
+          "label": "10: accesoDenegado"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-61",
+          "type": "edge",
+          "parent": "1",
+          "source": "1cUZVZyviqqRqft7OlX7-62",
+          "target": "1cUZVZyviqqRqft7OlX7-42",
+          "label": "1: lectQR(qr: Entrada)()"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-62",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-63",
+          "type": "node",
+          "parent": "1",
+          "label": "accesoAficionado"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-64",
+          "type": "edge",
+          "parent": "1",
+          "source": "1cUZVZyviqqRqft7OlX7-47",
+          "target": "1cUZVZyviqqRqft7OlX7-44",
+          "label": "7: error"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-65",
+          "type": "node",
+          "parent": "1",
+          "label": "R1 : registroAcceso"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-66",
+          "type": "node",
+          "parent": "1",
+          "label": "&lt;&lt; create &gt;&gt;"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-67",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-68",
+          "type": "node",
+          "parent": "1",
+          "label": ":molinete ?"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-69",
+          "type": "node",
+          "parent": "1cUZVZyviqqRqft7OlX7-68"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-35",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-36",
+          "type": "node",
+          "parent": "1",
+          "label": ":aficionado"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-28",
+          "type": "node",
+          "parent": "9NsYLpCroGIw-4cZr2w5-36"
+        },
+        {
+          "id": "gTZeGRFahD_8OmXUbKpx-5",
+          "type": "node",
+          "parent": "1",
+          "label": "entradaVencida"
+        },
+        {
+          "id": "9NsYLpCroGIw-4cZr2w5-38",
+          "type": "node",
+          "parent": "1",
+          "label": "Lifeline1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-74",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-75",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-76",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-77",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-78",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-79",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-80",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-81",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-82",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "1cUZVZyviqqRqft7OlX7-83",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "gTZeGRFahD_8OmXUbKpx-9",
+          "type": "edge",
+          "parent": "1",
+          "source": "x7DoZ285upM_WTL2w8p7-20"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-33",
+          "type": "node",
+          "parent": "1",
+          "label": "accesoDenegado"
+        },
+        {
+          "id": "ZAwvrGFST8smJ81ZUelY-6",
+          "type": "edge",
+          "parent": "1",
+          "label": "7: accesoDenegado"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-1",
+          "type": "edge",
+          "parent": "1",
+          "source": "sPu3u5BkCqpacvyjCrtT-2"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-3",
+          "type": "node",
+          "parent": "IH9NQahS-L97MFsX1g65-1",
+          "label": "5: fechaEntrada,puerta,aficionado"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-4",
+          "type": "edge",
+          "parent": "1",
+          "label": "6: validarFecha()"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-5",
+          "type": "node",
+          "parent": "1",
+          "label": "8. accesoPermitido"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-31",
+          "type": "node",
+          "parent": "1",
+          "label": "AficionadoDenegado"
+        },
+        {
+          "id": "ZAwvrGFST8smJ81ZUelY-5",
+          "type": "edge",
+          "parent": "1",
+          "target": "9NsYLpCroGIw-4cZr2w5-1",
+          "label": "18: accesoDenegado"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-26",
+          "type": "edge",
+          "parent": "1",
+          "source": "9NsYLpCroGIw-4cZr2w5-1",
+          "target": "IH9NQahS-L97MFsX1g65-14"
+        },
+        {
+          "id": "x7DoZ285upM_WTL2w8p7-30",
+          "type": "node",
+          "parent": "1",
+          "label": "11:obtenerDatosAficionado(Huella)"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-7",
+          "type": "edge",
+          "parent": "1",
+          "source": "IH9NQahS-L97MFsX1g65-6",
+          "target": "9NsYLpCroGIw-4cZr2w5-1"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-9",
+          "type": "node",
+          "parent": "IH9NQahS-L97MFsX1g65-7",
+          "label": "10: leerHuella(Huella, puerta)"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-6",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-10",
+          "type": "edge",
+          "parent": "1",
+          "source": "IH9NQahS-L97MFsX1g65-14",
+          "target": "9NsYLpCroGIw-4cZr2w5-1",
+          "label": "12. idAficionado"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-14",
+          "type": "node",
+          "parent": "1",
+          "label": ":datosBiometricos"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-16",
+          "type": "node",
+          "parent": "IH9NQahS-L97MFsX1g65-14"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-20",
+          "type": "edge",
+          "parent": "1",
+          "target": "9NsYLpCroGIw-4cZr2w5-36"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-21",
+          "type": "node",
+          "parent": "IH9NQahS-L97MFsX1g65-20",
+          "label": "13: obtenerAficionado(id)"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-22",
+          "type": "edge",
+          "parent": "1",
+          "label": "14. Aficionado"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-23",
+          "type": "edge",
+          "parent": "1",
+          "label": "16: validarAficionado(aficionado)"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-25",
+          "type": "edge",
+          "parent": "1",
+          "label": "17: validarPuerta()"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-29",
+          "type": "edge",
+          "parent": "1",
+          "label": "21: permitirPaso"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-30",
+          "type": "edge",
+          "parent": "1",
+          "source": "9NsYLpCroGIw-4cZr2w5-1",
+          "target": "IH9NQahS-L97MFsX1g65-33"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-31",
+          "type": "node",
+          "parent": "IH9NQahS-L97MFsX1g65-30",
+          "label": "15: registrarSegundoTramo()"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-33",
+          "type": "node",
+          "parent": "1",
+          "label": ":accesoMolinete"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-35",
+          "type": "node",
+          "parent": "IH9NQahS-L97MFsX1g65-33"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-40",
+          "type": "edge",
+          "parent": "1",
+          "target": "IH9NQahS-L97MFsX1g65-32",
+          "label": "18: registrarAccesoCompleto(acceso)"
+        },
+        {
+          "id": "IH9NQahS-L97MFsX1g65-41",
+          "type": "edge",
+          "parent": "1",
+          "source": "x7DoZ285upM_WTL2w8p7-20",
+          "target": "IH9NQahS-L97MFsX1g65-35",
+          "label": "19: registroCompletado"
+        },
+        {
+          "id": "UDGIevzLymX5XzAZMPNq-1",
+          "type": "edge",
+          "parent": "1",
+          "label": "9: accesoPermitido"
+        },
+        {
+          "id": "UDGIevzLymX5XzAZMPNq-5",
+          "type": "edge",
+          "parent": "1",
+          "target": "1cUZVZyviqqRqft7OlX7-7",
+          "label": "20: accesoPermitido"
+        }
+      ]
+    },
+    {
+      "id": "ln6OmESckAZtrN98UlC_",
+      "name": "DIAGRAMA-CLEAN",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-1",
+          "type": "node",
+          "parent": "1",
+          "label": ":C_Acceso"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-2",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-1"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-3",
+          "type": "node",
+          "parent": "1",
+          "label": ":accesoPolicial"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-4",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-3"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-5",
+          "type": "edge",
+          "parent": "cS6PqQHFkUejvHZGJUTf-3",
+          "target": "cS6PqQHFkUejvHZGJUTf-4",
+          "label": "3: BuscarQR(qr)"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-6",
+          "type": "node",
+          "parent": "1",
+          "label": ":entrada"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-7",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-6"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-8",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-9",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-8",
+          "label": "7: registrarPrimerTramo()"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-10",
+          "type": "edge",
+          "parent": "1",
+          "label": "8: accesoDenegadoRegistrado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-11",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-4",
+          "target": "cS6PqQHFkUejvHZGJUTf-7"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-12",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-11",
+          "label": "4: obtenerInfoEvento(Evento)"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-13",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-2",
+          "target": "cS6PqQHFkUejvHZGJUTf-4"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-14",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-13",
+          "label": "2: validarQR(qr)"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-15",
+          "type": "edge",
+          "parent": "1",
+          "label": "9: accesoDenegado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-16",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-17",
+          "target": "cS6PqQHFkUejvHZGJUTf-2",
+          "label": "1: lectQR(qr: Entrada)()"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-17",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-18",
+          "type": "node",
+          "parent": "1",
+          "label": "accesoAficionado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-19",
+          "type": "node",
+          "parent": "1",
+          "label": ":registradorAccesos"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-20",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-19"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-21",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-19"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-22",
+          "type": "node",
+          "parent": "1",
+          "label": "",
+          "html": "<div><br></div><div><br></div>"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-23",
+          "type": "node",
+          "parent": "1",
+          "label": ":aficionado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-24",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-23"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-25",
+          "type": "node",
+          "parent": "1",
+          "label": "entradaVencida"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-26",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-19"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-27",
+          "type": "node",
+          "parent": "1",
+          "label": "accesoDenegado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-28",
+          "type": "edge",
+          "parent": "1",
+          "label": "7: accesoDenegado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-29",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-7"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-30",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-29",
+          "label": "5: fechaEntrada,puerta,aficionado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-31",
+          "type": "edge",
+          "parent": "1",
+          "label": "6: validarFecha()"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-32",
+          "type": "node",
+          "parent": "1",
+          "label": "8. accesoPermitido"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-33",
+          "type": "node",
+          "parent": "1",
+          "label": "AficionadoDenegado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-34",
+          "type": "edge",
+          "parent": "1",
+          "target": "cS6PqQHFkUejvHZGJUTf-2",
+          "label": "18: accesoDenegado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-35",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-2",
+          "target": "cS6PqQHFkUejvHZGJUTf-41"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-36",
+          "type": "node",
+          "parent": "1",
+          "label": "11:obtenerDatosAficionado(Huella)"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-37",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-39",
+          "target": "cS6PqQHFkUejvHZGJUTf-2"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-38",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-37",
+          "label": "10: leerHuella(Huella, puerta)"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-39",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-40",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-41",
+          "target": "cS6PqQHFkUejvHZGJUTf-2",
+          "label": "12. idAficionado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-41",
+          "type": "node",
+          "parent": "1",
+          "label": ":datosBiometricos"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-42",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-41"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-43",
+          "type": "edge",
+          "parent": "1",
+          "target": "cS6PqQHFkUejvHZGJUTf-23"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-44",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-43",
+          "label": "13: obtenerAficionado(id)"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-45",
+          "type": "edge",
+          "parent": "1",
+          "label": "14. Aficionado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-46",
+          "type": "edge",
+          "parent": "1",
+          "label": "16: validarAficionado(aficionado)"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-47",
+          "type": "edge",
+          "parent": "1",
+          "label": "17: validarPuerta()"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-48",
+          "type": "edge",
+          "parent": "1",
+          "label": "21: permitirPaso"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-49",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-2",
+          "target": "cS6PqQHFkUejvHZGJUTf-51"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-50",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-49",
+          "label": "15: registrarSegundoTramo()"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-51",
+          "type": "node",
+          "parent": "1",
+          "label": ":accesoMolinete"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-52",
+          "type": "node",
+          "parent": "cS6PqQHFkUejvHZGJUTf-51"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-53",
+          "type": "edge",
+          "parent": "1",
+          "target": "cS6PqQHFkUejvHZGJUTf-21",
+          "label": "18: registrarAccesoCompleto(acceso)"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-54",
+          "type": "edge",
+          "parent": "1",
+          "source": "cS6PqQHFkUejvHZGJUTf-19",
+          "target": "cS6PqQHFkUejvHZGJUTf-52",
+          "label": "19: registroCompletado"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-55",
+          "type": "edge",
+          "parent": "1",
+          "label": "9: accesoPermitido"
+        },
+        {
+          "id": "cS6PqQHFkUejvHZGJUTf-56",
+          "type": "edge",
+          "parent": "1",
+          "target": "cS6PqQHFkUejvHZGJUTf-1",
+          "label": "20: accesoPermitido"
+        }
+      ]
+    }
+  ]
+}
